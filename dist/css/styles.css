@@ -383,7 +383,7 @@ button,
 [type=button],
 [type=reset],
 [type=submit] {
-  -webkit-appearance: button;
+  appearance: button;
 }
 button:not(:disabled),
 [type=button]:not(:disabled),
@@ -441,7 +441,7 @@ legend + * {
 
 [type=search] {
   outline-offset: -2px;
-  -webkit-appearance: textfield;
+  appearance: textfield;
 }
 
 /* rtl:raw:
@@ -462,7 +462,7 @@ legend + * {
 
 ::file-selector-button {
   font: inherit;
-  -webkit-appearance: button;
+  appearance: button;
 }
 
 output {
@@ -2801,9 +2801,7 @@ textarea.form-control-lg {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .btn {
-    transition: none;
-  }
+
 }
 .btn:hover {
   color: var(--bs-btn-hover-color);
@@ -11107,4 +11105,154 @@ footer.footer .social-link:hover {
   line-height: 7.5rem;
   font-size: 2.25rem;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 3px ;
+}
+
+.btn{
+  transition: background-color 0.3s,transform 0.3;
+}
+
+.btn:hover{
+  background-color: #04414d;
+}
+
+.clicked {
+  transform: scale(0.95);
+
+}
+
+/* Estilo personalizado para el botón GitHub */
+.btn-github {
+  background-color: #24292f;
+  color: white;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-github:hover {
+  background-color: #333;
+}
+
+.btn-github i {
+  margin-right: 8px; /* Espacio entre el icono y el texto */
+}
+
+.letrasobre  {
+  font-size: 1.5rem;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto;
+    margin-bottom: 0px;
+  line-height: 1.5;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+}
+
+.btn-conocer {
+  background-color: green;
+  background-image: linear-gradient(to right, #6a11cb, #2575fc);
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  border-radius: 25px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(106, 17, 203, 0.4);
+}
+
+.btn-habilidades {
+  background-color: #6a11cb;
+  background-image: linear-gradient(to right, #6a11cb, #2575fc);
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  border-radius: 25px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(106, 17, 203, 0.4);
+}
+
+.col-lg-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.projects {
+  font-size: 2.5rem;
+  color: green;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
+.btn-custom:hover {
+  background-image: linear-gradient(to right, #2575fc, #6a11cb);
+  transform: translateY(-2px);
+}
+
+.btn-custom {
+  background-color: #6a11cb;
+  background-image: linear-gradient(to right, #6a11cb, #2575fc);
+  border: none;
+    border-top-color: currentcolor;
+    border-right-color: currentcolor;
+    border-bottom-color: currentcolor;
+    border-left-color: currentcolor;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  border-radius: 25px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(106, 17, 203, 0.4);
+}
+
+.btn-xl {
+  padding: 1.25rem 2.5rem;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.bi::before {
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.btn-works {
+  background-color: #6a11cb;
+  background-image: linear-gradient(to right, #6a11cb, #2575fc);
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  border-radius: 25px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(106, 17, 203, 0.4);
+}
+
+.btn-curri {
+  background-color: #6a11cb;
+  background-image: linear-gradient(to right, #6a11cb, #2575fc);
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  border-radius: 25px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(106, 17, 203, 0.4);
 }
