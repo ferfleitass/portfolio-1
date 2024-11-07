@@ -78,3 +78,36 @@ function fadeIn(el, display) {
         }
     })();
 };
+
+function validarFormulario(){
+    const nombre = document.getElementById('nombre').value;
+    const correo = document.getElementById('correo').value;
+    const mensaje = document.getElementById('mensaje').value;
+
+    if (nombre === '' || correo === '' || mensaje === ''){
+        alert('Rellene todos los campos');
+        return false;
+    }
+
+    alert('Formulario enviado');
+    return true;
+}
+
+document.getElementById('conocerMasBtn').addEventListener('click', function(event) {
+    event.preventDefault();
+
+    this.classList.add('clicked');
+    
+   
+    const targetId = this.getAttribute('href'); 
+    const targetElement = document.querySelector(targetId);
+    
+    if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    setTimeout(() => {
+        this.classList.remove('clicked');
+    }, 300); 
+});
+
